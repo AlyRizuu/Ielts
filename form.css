@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+/* Reset font styles to avoid Bootstrap font interference */
+body, .container, .wrapper, .tab-content, .nav-tabs, .nav-link, .tab-pane, a {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-decoration: inherit !important;
+   
+   
+}
+/* ____________NAVBAR________________ */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    
+    background-color: rgba(255, 255, 255, 0.621);
+}
+.nav-main{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+/*______ LOGO_____ */
+.logo img{
+    width: 80px;
+   
+}
+.logo a{
+    color: black;
+}
+/*____MENU ITEMS_________ */
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li a{
+color: #000000;
+}
+nav ul li a:hover{
+    color: #295782;
+    
+}
+.arrow{
+    color: #000000;
+}
+#dropdown-item:hover .arrow{
+    color: #295782;
+}
+.nav-span{
+    width: 0px;
+    height: 3px;
+    background-color: #295782;
+    border: none;
+    border-radius: 5px;
+}
+nav ul li:hover .nav-span{
+width: 100%;
+transition: 0.4s;
+}
+#home{
+    font-weight: bold;
+}
+
+/* _______NAV BUTTONS__________ */
+.nav-buttons{
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.nav-buttons a{
+padding: 10px 15px;
+background-color: #295782;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+.nav-buttons a:hover{
+    background-color: transparent;
+    border: 1px solid #295782;
+    color: #295782;
+    transition: 0.5s;
+}
+
+/* DROPDOWN */
+
+
+
+.dropdown{
+    display: none;
+    top: 62px;
+    padding: 20px;
+    right: 50px;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 280px;
+    max-width: 280px;
+    gap: 10px;
+    border-radius: 10px;
+}
+#drop-down{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+#drop-down li{
+    width: 100%;
+}
+#dropdown a{
+    color: #295782;
+}
+#drop-down1{
+    justify-content: space-around;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#drop-down1 li:hover #drop-down1 li a{
+    color: white !important;
+}
+
+#drop-down1 li{
+    width: 100%;
+}
+#drop-down1 li a:hover{
+    font-weight: bolder;
+} 
+#dropdown-item:hover .dropdown{
+    display: flex;
+}
+
+/* HAMBURGER */
+.hamburger{
+    display: flex;
+    align-items: center;
+   gap: 25px;
+    flex-direction: column;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #EAF4FE;
+
+height: 100vh;
+width: 100%;
+display: none;
+padding-top: 30px;
+}
+.hamburger a {
+    color: #295782;
+}
+.nav-buttons a{
+    color: white;
+}
+.open{
+    display: none;
+}
+
+
+/* __________________________SECTION 1________________ */
+.sec-1{
+    background: linear-gradient(rgb(14, 14, 14,0.5),rgb(143, 138, 138,0.5)), url(https://hips.hearstapps.com/hmg-prod/images/graduating-class-royalty-free-image-1713814886.jpg); 
+    backdrop-filter: brightness(0.6);
+    background-size: cover;
+    background-position: center;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    
+   
+
+}
+.sec-1 h1{
+    color: white;
+ padding-bottom: 20px;
+    padding-top: 100px;
+    font-size: 55px;
+   
+}
+
+@media screen and (min-width: 767px) and (max-width:1170px)  {
+    .open{
+        display: inline-block;
+
+    }
+    .hide-on-mob{
+        display: none;
+    }
+    #hide-on-mob{
+        display: none;
+}
+
+.sec-1 h1{
+    padding-bottom: 30vh;
+    background-position: top;
+    background-size: cover ;
+}
+}
+
+@media screen and (max-width: 767px){
+    .sec-1 h1{
+        padding-bottom: 30vh;
+        background-position: top;
+        background-size: cover ;
+    }
+    .open{
+        display: inline-block;
+
+    }
+    .hide-on-mob{
+        display: none;
+    }
+    #hide-on-mob{
+        display: none;
+}  
+}
+
+@media screen  and (max-width:580px) {
+    .sec-1 p{
+        max-width: 350px;
+        width: 350px;
+        height: auto;
+    }
+}
+@media screen  and (max-width:442px) {
+    .sec-1{
+        padding-left: 20px;
+    }
+    .sec-1 p{
+        max-width: 280px;
+        width: 350px;
+        height: auto;
+    }
+    .footer-icon1{
+        width: 80px;
+    }
+}
+/* ______________SECTIOn 2____________ */
+.sec-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sec-2 h2{
+font-size: 35px;
+text-align: center;
+
+padding-bottom: 30px;
+}
+.sec-1 p{
+    color: white;
+    width: 500px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.sec-2 p{
+    width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.sec-2-button{
+   
+}
+.sec-2-button a{
+    padding: 10px 20px 10px 20px;
+    background-color: #295782;
+    color: white;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.sec-2 a:hover{
+    background-color: transparent;
+    color: #295782;
+    border: 1px solid #295782;
+}
+
+@media screen and (max-width:818px) {
+    .sec-2 p{
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width:608px) {
+    .sec-2 p{
+        max-width: 400px;
+        
+    }
+}
+
+@media screen and (max-width:408px) {
+    .sec-2 p{
+        max-width: 300px;
+        
+    }
+}
+
+
+
+
+/* ______________________FOOTER_______________________ */
+footer{
+    background-color: rgba(217, 217, 217, 1);
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+   
+}
+.footer-content{
+    display: flex;
+ 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-div1 p{
+    width: 250px;
+padding-bottom: 10px;
+    max-width: 250px;
+}
+.footer-icons-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-btn1{
+    padding: 10px 10px;
+    background-color: #295782;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s;
+}
+.footer-btn1:hover{
+    background-color: transparent;
+    border: 1px solid #295782;
+    color: #295782;
+}
+
+.footer-div2 ul{
+    display: flex;
+gap: 20px;
+flex-direction: column;
+
+}
+.footer-div2 ul li:first-child{
+    padding-bottom: 5px;
+}
+.footer-div2 a{
+    color: black;
+transition: 0.4s;
+}
+.footer-div2  a:hover{
+    color: #295782;
+}
+
+.footer-div2 h4{
+    font-size: 14px;
+    width: 100px;
+    max-width: 100px;
+}
+.footer-icons{
+    display: flex;
+ align-items: center;  
+ flex-wrap: wrap;
+    gap: 5px;
+}
+.footer-icons .sec-1-icon{
+    color: #295782;
+}
+.footer-div3 p{
+    padding-top: 10px;
+    width: 300px;
+}
+
+@media screen and (max-width: 860px) {
+    .footer-content{
+        
+        gap: 50px;
+        justify-content: space-evenly;
+    }
+    .footer-div2{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    #footer p, #footer h4, #footer h5{
+        text-align: center;
+    }
+    #footer .logo{
+        text-align: center;
+    }
+    .footer-btn1{
+       display: flex;
+       align-items:none;
+       justify-content: center;
+    }
+}
